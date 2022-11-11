@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+body {
+	font: 18px 'Open Sans', sans-serif;
+	background-color: #C5E0D5;
+}
+
+main {
+	width: 98%;
+	margin: 0 auto;
+	background-color: #F0F0F0;
+}
+
+header {
+	height: 400px;
+	background: url('../images/banner.jpg') no-repeat center;
+	background-size: cover;
+}
+
+header h1 {
+	margin: 0;
+	padding-top: 140px;
+	font: 80px 'Dancing Script', cursive;
+	text-align: center;
+	letter-spacing: 5px;
+	text-shadow: 3px 3px black;
+	color: white;
+}
+
+nav {
+	background-color: #081446;
+	height: 50px;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	float: left;
+	width: 33.33%;
+}
+
+nav li.active {
+	background-color: #DF5029;
+	font-weight: bold;
+}
+
+nav li:hover {
+	background-color: gray;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 13px 16px;
+}
+
+#content {
+	padding: 20px;
+}
+
+#content hr {
+	margin-bottom: 20px;
+}
+
+.komment {
+	margin: 20px 10px;
+	overflow: auto;
+	padding: 10px;
+	border: 2px solid gray;
+	box-shadow: 5px 5px 5px lightgray;
+	background-color: white;
+}
+
+.komment h4 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.komment .datum {
+	float: right;
+	margin-top: 5px;
+}
+
+img.profile {
+	height: 120px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.komment-urlap input[type="submit"] {
+	height: 50px;
+	width: 150px;
+	border: none;
+	outline: none;
+	background-color: #DF5029;
+	font-size: 18px;
+	color: white;
+}
+
+.hibak {
+	width: 98%;
+	margin: 10px auto;
+	padding: 5px 0;
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.5);
+	color: white;
+}
+
+form.login, form.signup {
+	width: 650px;
+	background-color: #FFFFFF;
+	padding: 30px;
+	border: 5px solid #DF5029;
+	margin: 45px auto;
+}
+
+form input {
+	margin-bottom: 20px;
+}
+
+label {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	padding-left: 10px;
+	outline: none;
+}
+
+form.login input[type="submit"], form.signup input[type="submit"] {
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+	border: none;
+	outline: none;
+	background-color: #DF5029;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+}
+
+table.profile-data {
+	margin: auto;
+	border: 5px solid #DF5029;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+table.profile-data th, table.profile-data td {
+	text-align: center;
+	padding: 20px;
+}
+
+table.profile-data img {
+	border-radius: 10px;
+}
+
+footer {
+	padding: 25px;
+	background-color: #081446;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}

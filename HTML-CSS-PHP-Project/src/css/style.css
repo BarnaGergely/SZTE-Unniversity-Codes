@@ -1,0 +1,344 @@
+/*------------------Basic Informations----------------------
+Colors:
+  - Text color: #dedede
+  - Background color: #4a4c4e
+  - Main color: #fa9c1e
+
+Font family: 
+etc.
+
+                RESPONSIVE DESIGN!
+              Default formating: MOBIL
+              
+First I created the style of the mobile devices and then
+with media quaries the tablet and PC view.
+*/
+
+/*------------------VARIABLES----------------------*/
+:root{
+  --main-backgound-color: #1b1b1b;
+  --secondary-backgound-color: gray;
+  --main-font-color: #dedede;
+  --heading-font-color:  #fa9c1e;
+  --main-color: #fa9c1e;
+}
+
+/*------------------MAIN----------------------*/
+
+* {
+
+}
+
+main{
+  background-color: #4a4c4e;
+  padding: 2rem;
+  width: 70rem;
+  margin: 80px auto 35px auto;
+}
+
+p.gombok {
+  background-color: #fa9c1e;
+  color: #dedede;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+p.kepesseg{
+  text-align:center;
+  color: #fa9c1e;
+}
+
+table, th, td{
+  /*border: 1px solid #dedede;*/
+}
+
+th, td
+{
+  padding: 0.5rem;
+  /*background-color: gray;*/
+}
+
+td:first-child
+{
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+td:last-child
+{
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+td:first-child
+{
+  font-weight: bold;
+}
+
+td:nth-child(odd)
+{
+  background-color: gray;
+}
+
+td:not(:first-child):not(:last-child)
+{
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+td{
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+img.kepesseg{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 75%;
+}
+
+q
+{
+vertical-align: center;
+}
+
+audio{
+
+}
+
+.hosHang
+{
+  padding: 1rem 0;
+}
+
+.hosLeirasBox
+{
+  background-color: grey;
+  margin: 3rem;
+  padding: 3rem;
+}
+
+html
+{
+  color: var(--main-font-color);
+  background-color: var(--main-backgound-color);
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*Google Fonts is also an option, but yet I do not imported any*/
+  font-weight: 400;
+  text-align: left;
+  height: 100%
+}
+
+body
+{
+  background-image: url("../assets/base/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  min-height: 90%;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:active {
+  color: #dedede;
+  text-decoration: none;
+}
+
+/*------------------CONTENT----------------------*/
+h1,
+h2,
+h3,
+h4 {
+  font-variant: small-caps;
+  color: var(--heading-font-color);
+  text-align: center;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p{
+  text-align: justify;
+}
+
+mark {
+  background-color: var(--main-color);
+  color: #dedede;
+}
+
+input[type=text], input[type=password], input[type=password-check], input[type=date], input[type=email], input[type=number], select, input[type=checkbox]:checked, input[type=radio]:checked, input[type=file], textarea {
+  border: 0.1rem solid var(--main-color);
+  padding: 0.2rem;
+  margin: 0.2rem 1rem 0.2rem 0;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--main-color);
+  color: #dedede;
+  border: none;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #dedede;
+  color: var(--main-color);
+  border: none;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+/*Also need style: em, mark, strong, button, form, list, etc. */
+
+/*---------Content on Tablet---------*/
+/*@media only screen and (min-width: 600px) {
+}*/
+
+/*---------Content on PC---------*/
+/*@media only screen and (min-width: 1200px) {
+}*/
+
+/*------------------HEADER----------------------*/
+header {
+  background-color: gray;
+  position: fixed;
+  border-bottom: 2px solid #dedede;
+  width: 100%;
+  padding: 0.5rem;
+  height: 65px;
+  top: 0 !important;
+  z-index: 1;
+}
+
+footer
+{
+  bottom: 0 !important;
+  background-color: gray;
+  position:fixed;
+  border-top: 2px solid #dedede;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  height:20px;
+  z-index: 1;
+}
+
+span.logo {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.imgLogo {
+  width: 4rem;
+  vertical-align: inherit;
+  text-align: inherit;
+}
+.imgLogoText {
+  width: 12rem;
+  vertical-align: inherit;
+  text-align: inherit;
+}
+
+nav {
+}
+
+span.menubar > a {
+  padding: 1rem;
+  text-align: center;
+  color: #4a4c4e;
+  font-weight: bold;
+  margin: 0.1rem;
+  transition: all 0.3s;
+}
+
+span.menubar > a:hover:not(.active-page) {
+  color: var(--main-color);
+  background-color: #dedede;
+  border-bottom:2px solid #4a4c4e;
+  border-radius: 1rem
+}
+
+span.menubar > .active-page {
+  color: #dedede;
+  background-color: var(--main-color);
+  border-bottom:2px solid #4a4c4e;
+  border-radius: 1rem
+}
+
+.imgLogin {
+  width: 4rem;
+  vertical-align: inherit;
+  text-align: inherit;
+}
+
+.logo {
+
+}
+
+/*---------Header on Tablet---------*/
+/*@media only screen and (max-width: 37.5rem) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav > a {
+    display: inline;
+    line-height: 4rem;
+  }
+  .imgLogo {
+    margin-bottom: 0.2rem;
+  }
+  .logo {
+    vertical-align: top;
+  }
+}*/
+
+/*---------Header on PC---------*/
+/*@media only screen and (max-width: 65rem) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav > a {
+    display: inline;
+    border: 2px solid pink;
+  }
+  .logo {
+    vertical-align: middle;
+  }
+  .imgLogo {
+    margin: 1rem 0;
+  }
+}*/
+
+/*------------------FOOTER----------------------*/
+footer {
+
+
+}

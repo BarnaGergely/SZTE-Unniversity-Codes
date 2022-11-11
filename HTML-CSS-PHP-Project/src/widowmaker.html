@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Widowmaker - Óvervécs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/base/Logo.svg">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+        #widowmakerHeader{
+            margin-top: -100px;
+            padding-top: 100px;
+        }
+
+        #heroes {
+            padding: 3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #heroes>div {
+            border: 1px solid white;
+            background-color: gray;
+            border-radius: 1rem;
+        }
+
+        #heroes>div:hover {
+            animation: imageZoom 0.5s forwards;
+        }
+
+        @keyframes imageZoom {
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        #heroes img {
+            border-radius: 0rem 1rem 0rem 0rem;
+        }
+
+        #style img {
+            width: fit-content;
+            margin: auto;
+            display: block;
+        }
+
+        .heroPortrait {
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 0.3rem;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <span style="float: left; padding-left: 2rem">
+      <a href="./index.html" style="display: inline">
+        <span class="logo">
+          <img class="imgLogo" src="./assets/base/Logo.svg" alt="Óvervécs logo" />
+          <img class="imgLogoText" src="./assets/base/Text_logo_light.svg" alt="Óvervécs" />
+        </span>
+      </a>
+    </span>
+    <div style="float: right; padding-right: 2rem">
+        <nav style="display: inline">
+        <span class="menubar">
+          <a href="./hirek.php">Hírek</a>
+          <a href="./jatekTortenete.html">Története</a>
+          <a href="./jatekmodok.html">Játékmódok</a>
+          <a href="./hosokBemutatasa.html" class="active-page">Hősök</a>
+          <a href="./esemenyek.html">Események</a>
+        </span>
+        </nav>
+
+        <a href="./bejelentkezes.php" style="display: inline">
+        <span class="logo">
+          <img class="imgLogin" src="./assets/base/Login.svg" alt="Bejelentkezés" />
+        </span>
+        </a>
+    </div>
+</header>
+    <main>
+        <h1>Választható hősök</h1>
+        <div id="heroes">
+            <div>
+                <a href="diva.html#dvaHeader"><img src="assets/index/imgPortraitDVa.png" alt="D.Va profilképe"><br>
+                    <div class="heroPortrait">D-Va</div>
+                </a>
+            </div>
+            <div>
+                <a href="mercy.html#mercyHeader"><img src="assets/index/imgPortraitMercy.png" alt="Mercy"><br>
+                    <div class="heroPortrait">Mercy</div>
+                </a>
+            </div>
+            <div>
+                <a href="widowmaker.html#widowmakerHeader"><img src="assets/index/imgPortraitWidowmaker.png" alt="Widowmaker"><br>
+                    <div class="heroPortrait">Widowmaker</div>
+                </a>
+            </div>
+        </div>
+        <h1 id="widowmakerHeader">Widowmaker</h1>
+        <h2>Története</h2>
+        <div class="hosLeirasBox">
+            <p style="margin: 8px">Amélie Lacroix (Widowmaker) férje (Gerard Lacroix) az Overwatch tagja volt, aki a Talon terrorista mozgalom felszámolásában dolgozott.
+                Gérard ellen több merényletet próbáltak elkövetni, amik mind sikertelenek voltak.
+                Így a Talon Gérard helyett Amélie-re fókuszált. Sikeresen elrabolták őt és egy új neurális szérumot használtak rajta.
+                Eredetileg nem tudták megtörni, viszont a szérum hatására megtört és újra programozták a gondolkodását.
+                Az Overwatch fáradságos munkájával sikerült megtalálniuk Amélie-t és így visszatérhetett az előző életéhez.
+                Viszont megtalálása után két héttel álmában megölte Gérardot, ugyanis alvajáróként arra volt programozva, hogy férjével végezen..</p>
+            <p style="margin: 8px">Mivel küldetését elvégezte, visszatért a Talonhoz, akik további módosításokat végeztek rajta.
+                Emberi érzéseitől megfosztották, kitanították a rejtőzködés művészetére, illetve a szívverését is lelassították,
+                utóbbi hatására a bőrszíne kék lett. Ezen módosítások után „Widowmaker” lett a Talon szervezet legkiválóbb bérgyilkosa.</p>
+        </div>
+        <h2>Képességei</h2>
+        <div style="display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;">
+            <table style="margin: 3rem">
+                <tr>
+                    <td>
+                        <img class="kepesseg" alt="Markoló horog" src="./assets/hosokBemutatasa/icon-ability.png"/>
+                        <p class="kepesseg">Markoló horog</p>
+                    </td>
+                    <td>Widowmaker kilő egy horgonyt, amellyel magasalatokra feltudja húzni magát, így jobban átlátja a harcteret és elmenekülhet az ellenfelektől.</td>
+                    <td><p class="gombok">SHIFT</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="kepesseg" alt="Infra látásmód" src="./assets/hosokBemutatasa/Ability-widowmaker4.webp"/>
+                        <p class="kepesseg">Infra látásmód</p>
+                    </td>
+                    <td>Widowmaker hőszenzorának segítségével képes átlátni a falakon és tárgyakon egy bizonyos ideig. Ezt a látást  csapattársai is megkapják.</td>
+                    <td><p class="gombok">Q</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="kepesseg" alt="Méreg bánya" src="./assets/hosokBemutatasa/Widowmaker_ability_icon_2.png"/>
+                        <p class="kepesseg">Méreg bánya</p>
+                    </td>
+                    <td>Widowmaker elhelyez egy érgező aknát, ami minden felületre feltapad. Amikor egy célpont a közelébe ér, az akna aktiváldódik és mérgező gázt bocsájt ki az összes ott tartózkodó ellenfélnek.</td>
+                    <td><p class="gombok">E</p></td>
+                </tr>
+            </table>
+            <img style="display: block; margin-left: auto; margin-right: auto" src="./assets/hosokBemutatasa/Daco_4171307.png" alt="Widowmaker" width="200"/>
+        </div>
+        <h2>Hangok</h2>
+        <div class="hosLeirasBox">
+            <div class="hosHang">
+                <audio controls>
+                    <source src="./assets/hosokBemutatasa/Widowmaker_-_One_shot,_one_kill.oga" type="audio/ogg"/>
+                </audio>
+                <q>Egy lövés, egy ölés</q>
+            </div>
+            <div class="hosHang">
+                <audio controls>
+                    <source src="./assets/hosokBemutatasa/Widowmaker_-_I_m_ready_to_kill.oga" type="audio/ogg"/>
+                </audio>
+                <q>Készen állok az ölésre</q>
+            </div>
+            <div class="hosHang">
+                <audio controls>
+                    <source src="./assets/hosokBemutatasa/Enemy_sighted.oga" type="audio/ogg"/>
+                </audio>
+                <q>Ellenség láthatáron</q>
+            </div>
+            <div class="hosHang">
+                <audio controls>
+                    <source src="./assets/hosokBemutatasa/I_always_hit_my_mark.oga" type="audio/ogg"/>
+                </audio>
+                <q>Mindig célba találok</q>
+            </div>
+        </div>
+    </main>
+    <footer>Copyright 2022 - Halápi Vivien, Barna Gergely</footer>
+</body>
+
+</html>

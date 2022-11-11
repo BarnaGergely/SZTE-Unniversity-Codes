@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg"
+   width="400"
+   height="400"
+   viewBox="0, 0, 400,400"
+   version="1.1"
+   sodipodi:docname="Login.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview5"
+     showgrid="false"
+     inkscape:zoom="2.15"
+     inkscape:cx="200"
+     inkscape:cy="200"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svgg" />
+  <g
+     id="svgg">
+    <path
+       id="path0"
+       d="M186.531 0.430 C 72.043 8.787,-12.750 111.859,1.649 225.166 C 14.463 326.002,103.638 402.646,204.898 399.852 C 330.912 396.376,423.311 277.416,394.843 155.306 C 372.668 60.186,282.838 -6.601,186.531 0.430 M209.796 16.747 C 356.348 25.139,434.790 193.217,346.420 309.497 C 340.041 317.891,322.323 336.735,320.809 336.735 C 320.658 336.735,320.424 334.301,320.290 331.327 C 318.124 283.427,283.127 239.316,234.566 223.279 C 232.363 222.552,230.618 221.899,230.689 221.829 C 230.759 221.760,232.528 220.960,234.620 220.053 C 276.735 201.793,292.632 144.798,266.708 105.006 C 234.086 54.932,160.692 56.914,130.920 108.673 C 108.431 147.772,124.306 199.297,165.150 219.774 L 169.413 221.911 162.972 224.023 C 115.479 239.595,81.664 282.850,79.722 330.510 C 79.583 333.934,79.323 336.735,79.144 336.735 C 78.477 336.735,64.333 322.579,60.436 318.011 C 26.517 278.254,11.374 227.820,17.958 176.542 C 30.164 81.479,114.431 11.287,209.796 16.747 "
+       stroke="none"
+       fill="#000000"
+       fill-rule="evenodd"
+       style="fill:#dedede;fill-opacity:1" />
+  </g>
+</svg>

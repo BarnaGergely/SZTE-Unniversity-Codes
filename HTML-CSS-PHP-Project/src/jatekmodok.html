@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Játékmódok - Óvervécs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/x-icon" href="./assets/base/Logo.svg">
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <style>
+    /*    Inline Style    */
+  </style>
+</head>
+
+<body>
+<header>
+    <span style="float: left; padding-left: 2rem">
+      <a href="./index.html" style="display: inline">
+        <span class="logo">
+          <img class="imgLogo" src="./assets/base/Logo.svg" alt="Óvervécs logo" />
+          <img class="imgLogoText" src="./assets/base/Text_logo_light.svg" alt="Óvervécs" />
+        </span>
+      </a>
+    </span>
+  <div style="float: right; padding-right: 2rem">
+    <nav style="display: inline">
+        <span class="menubar">
+          <a href="./hirek.php">Hírek</a>
+          <a href="./jatekTortenete.html">Története</a>
+          <a href="./jatekmodok.html" class="active-page">Játékmódok</a>
+          <a href="./hosokBemutatasa.html">Hősök</a>
+          <a href="./esemenyek.html">Események</a>
+        </span>
+    </nav>
+
+    <a href="./bejelentkezes.php" style="display: inline">
+        <span class="logo">
+          <img class="imgLogin" src="./assets/base/Login.svg" alt="Bejelentkezés" />
+        </span>
+    </a>
+  </div>
+</header>
+<main>
+  <h1>Játékmódok</h1>
+  <h2>Alap játékmenet</h2>
+  <div class="hosLeirasBox">
+  <p>Az Overwatch egy kifejezetten csapat-alapú FPS, ahol a pályákon 2 csapat 6-6 játékosa mérkőzik
+    meg a másik csapattal. A meccsek alatt a játékos által elért gyilkosságokat, asszisztálásokat és
+    gyógyításokat a rendszer a meccs végén – a közvetlen tapasztalati pontok (experience point)
+    mellett – bronz (bronze), ezüst (silver) és arany (gold) medálokkal is jutalmazhatja, amelyek
+    további tapasztalati pontokat jelentenek. Amikor pedig a játékos elér egy bizonyos mennyiségű
+    tapasztalati pontot, szintet lép, amely nemcsak játékbeli tapasztalatát szimbolizálja, hanem
+    egyes játékmódok eléréséhez is szükséges, illetve jutalmul egy zsákmánydobozt is kap. Az említett medálok
+  a következő képen láthatóak:</p>
+    <img style="display: block; margin-left: auto; margin-right: auto;" alt="Rangok" src="./assets/jatekmodok/overlay.png"/>
+  </div>
+  <h2>Játékmódok leírása</h2>
+  <div class="hosLeirasBox"><p>
+    Az Overwatchban két típusú játékmód van; a mesterséges intelligencia (M.I.) és más játékosokkal szemben. Utóbbi esetben van lehetőség normál, illetve rangsorolt meccsek elindítására is, viszont pár módtól eltekintve egyikben se választhatja két vagy több játékos ugyanazt a hőst. Értelemszerűen a gép elleni játék kevesebb tapasztalati pontot jelent, ezért kezdő játékosoknak ajánlott, hogy kiismerjék a játékmechanikát és a szerepkörök használatát.
+  </p>
+
+  </div>
+  <table style="margin:5rem">
+    <tr>
+      <th id="mod">Mód neve</th>
+      <th id="leiras">Leírás</th>
+    </tr>
+    <tr>
+      <td headers="mod">Gyors játék</td>
+      <td headers="leiras">Ebben a módban a játékos szintjéhez, illetve statisztikai eredményeihez igazodva
+        hozz össze a rendszer más játékosokkal, véletlenszerű pályatípusú és pályájú meccsekhez.</td>
+    </tr>
+    <tr>
+      <td headers="mod">Árkád</td>
+      <td headers="leiras">Egyedi játékmód, ahol heti limittel ugyan, de minden harmadik győzelemmel egy zsákmány dobozt szerezhet a játékos.
+        Több további mód érhető el benne, amelyek napi szinten változnak</td>
+    </tr>
+    <tr>
+      <td headers="mod">Öldöklés</td>
+      <td headers="leiras">Ebben a módban nincsenek csapatok, így tehát mindenki mindenki ellen harcol. Az győz, aki először éri el a 20 gyilkosságot (kill).</td>
+    </tr>
+    <tr>
+      <td headers="mod">Szerezd meg a zászlót</td>
+      <td headers="leiras">Ebben a módban 2 teljes csapat versenyzik azért, hogy megszerezze a másik "bázisán" lévő zászlót, majd azt elvigye a saját zászlójukhoz.
+        Az a csapat győz, amely előbb visz el három ellenséges zászlót illetve az időlimit lejárta előtt a legtöbbet. Döntetlen helyzetben nincs győztes.</td>
+    </tr>
+    <tr>
+      <td headers="mod">Kiesés</td>
+      <td headers="leiras">Ebben a módban 2 csapat három fős tagjai csapnak össze, és az a csapat győz, aki háromszor legyőzi a másikat. Lehet választani hősöket, de nincs újraéledés, és nincsenek gyógycsomagok sem.</td>
+    </tr>
+    <tr>
+      <td headers="mod">Kizárásos kiesés</td>
+      <td headers="leiras">Ugyanaz, mint a fenti játékmód, csak a győztes csapat a következő körben már nem használhatja ugyanazt a hős függetlenül attól, hogy melyik játékos játszott vele.</td>
+    </tr>
+    <tr>
+      <td headers="mod">Kompetetív játék</td>
+      <td headers="leiras">Ez a rangsorolt játék, amely csak akkor érhető el, ha a játékos eléri a 25. szintet és lejátszik 10 helyezési meccset. Szezonokra van felosztva, több tucatnyi rang érhető el (bronz, ezüst, arany, stb), és minél magasabb rangon áll a játékos, annál több, ú.n. "kompetitív pontot" (competitive point) szerezhet, amelyből a hősök fegyvereinek (vagy fegyverzeteinek) aranyszínű verzióit lehet megvásárolni (lásd: "Játékon belüli jutalmazás" fejezet). A rangsorolt játékban a meccsek több fordulóból állnak, és az egyes célok megszerzésével is ilyen pontokat lehet gyűjteni. </td>
+    </tr>
+  </table>
+</main>
+
+<footer>Copyright 2022 - Halápi Vivien, Barna Gergely</footer>
+</body>
+
+</html>

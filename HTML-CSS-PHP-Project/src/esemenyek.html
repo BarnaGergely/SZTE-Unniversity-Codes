@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Események - Óvervécs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/base/Logo.svg">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        h2::after{
+            content: " - Esemény";
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: var(--secondary-backgound-color);
+        }
+        main section:nth-of-type(2){
+            width: 80%;
+        }
+
+        section img {
+            float: left;
+            width: 50%;
+            padding: 2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <span style="float: left; padding-left: 2rem">
+      <a href="./index.html" style="display: inline">
+        <span class="logo">
+          <img class="imgLogo" src="./assets/base/Logo.svg" alt="Óvervécs logo" />
+          <img class="imgLogoText" src="./assets/base/Text_logo_light.svg" alt="Óvervécs" />
+        </span>
+      </a>
+    </span>
+    <div style="float: right; padding-right: 2rem">
+        <nav style="display: inline">
+        <span class="menubar">
+          <a href="./hirek.php">Hírek</a>
+          <a href="./jatekTortenete.html">Története</a>
+          <a href="./jatekmodok.html">Játékmódok</a>
+          <a href="./hosokBemutatasa.html">Hősök</a>
+          <a href="./esemenyek.html" class="active-page">Események</a>
+        </span>
+        </nav>
+
+        <a href="./bejelentkezes.php" style="display: inline">
+        <span class="logo">
+          <img class="imgLogin" src="./assets/base/Login.svg" alt="Bejelentkezés" />
+        </span>
+        </a>
+    </div>
+</header>
+    <main>
+        <!--                    Content                    -->
+        <div>
+            <h1>legfrisebb események az Overwatch-ban</h1>
+            <p></p>
+        </div>
+        <section id="reaper">
+            <img src="assets/esemenyek/reaper.jpg" alt="Reaper’s Code of Violence Challenge banner">
+            <h2>Reaper’s Code of Violence Challenge</h2>
+            <p>Közeledik a számonkérés. Lépj az árnyékok közé, hogy korlátozott ideig gyűjts jutalmakat, köztük a
+                <strong>Legendary Dusk Reaper skint</strong>.</p>
+            <p style="text-align: center;"> <a
+                    href="https://playoverwatch.com/en-us/news/23765272/">Bővebben</a></p>
+        </section>
+        <section id="new-year">
+            <img src="assets/esemenyek/tiger.jpg" alt="Lunar new Year banner"
+                style="float: none; clear: both; position: relative; left: 22%;">
+            <h2>Lunar new Year</h2>
+            <p>Indítsd a Tigris évét üvöltéssel! Ünnepeld az Overwatch Lunar New Year visszatérését ünnepi
+                kozmetikumokkal, heti jutalmakkal és visszatérő csatákkal. Ennek az alkalomnak az emlékére gazdag, új
+                jutalmakat hozunk, amelyeket kinyithatsz: <strong>gyújts meg egy lámpást Genjivel, világítsd meg az éjszakát
+                    Orisa csillagszóróival, vegyél fel újévre kész ruhát Seolbim Mercy szerepében, repkedj a csatatéren
+                    Nezha Tracer tüzében és így tovább!</strong>
+            </p>
+            <p style="text-align: center;"> <a
+                    href="https://playoverwatch.com/en-us/events/lunar-new-year/">Bővebben</a></p>
+        </section>
+        <section id="archives">
+            <img src="assets/esemenyek/archives.jpg" alt="Reaper’s Code of Violence Challenge banner"
+                style="float: right;">
+            <h2>Archives</h2>
+            <p>Fedezze fel, hogyan írtak történelmet a hősök az Overwatch archívumában. Merülj el a múlt kulcsfontosságú
+                pillanataiból származó történetvezérelt kooperatív küldetésekben, és szerezz zsákmányt, beleértve a <strong>háború történelmi ruhái által ihletett skineket</strong> is az út során!</p>
+                <p style="text-align: center;"> <a
+                    href="https://playoverwatch.com/en-us/events/archives/">Bővebben</a></p>
+        </section>
+
+        <!--                    Content                    -->
+    </main>
+
+    <footer>Copyright 2022 - Halápi Vivien, Barna Gergely</footer>
+</body>
+
+</html>
