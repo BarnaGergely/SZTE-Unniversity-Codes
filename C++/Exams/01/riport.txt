@@ -1,0 +1,93 @@
+8. Probalkozas:
+-------------------------------------------------------------------------------
+teszt1 Nyuszi osztály - osztaly meglete (1 pont)
+-------------------------------------------------------------------------------
+Forditas: 1/1 pont
+Futas: 0/0 pont
+Futasido: 0.001
+-------------------------------------------------------------------------------
+teszt2 Nyuszi osztaly - getterek, setterek
+ Elofeltetel: default konstruktor meglete (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.001
+-------------------------------------------------------------------------------
+teszt3 Nyuszi osztaly - getterek konstans objektum eseten
+ Elofeltetel: default konstruktor helyes mukodese (1 pont)
+-------------------------------------------------------------------------------
+Forditas: 1/1 pont
+Futas: 0/0 pont
+Futasido: 0.000
+-------------------------------------------------------------------------------
+teszt4 Nyuszi osztaly - default konstruktor (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.002
+-------------------------------------------------------------------------------
+teszt5 Nyuszi osztaly - parameteres konstruktor (2 pont)
+-------------------------------------------------------------------------------
+Futas: 2/2 pont
+Futasido: 0.000
+-------------------------------------------------------------------------------
+teszt6 Nyuszi osztaly - prefix ++ operator
+ Elofeltetel: default konstruktor meglete (2 pont)
+-------------------------------------------------------------------------------
+Forditas: 1/1 pont
+Futas: 1/1 pont
+Futasido: 0.002
+-------------------------------------------------------------------------------
+teszt7 Nyuszi osztaly - postfix ++ operator
+ Elofeltetel: default konstruktor meglete (3 pont)
+-------------------------------------------------------------------------------
+Forditas: 1/1 pont
+Futas: 2/2 pont
+Futasido: 0.002
+-------------------------------------------------------------------------------
+teszt8 Repa osztaly - getterek (konstans objektumon is)
+ Elofeltetel: 1 parameteres konstruktor meglete (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.000
+-------------------------------------------------------------------------------
+teszt9 Repa osztaly - 1 parameteres konstruktor (helyes parameter) (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.001
+-------------------------------------------------------------------------------
+teszt10 Repa osztaly - 1 parameteres konstruktor (hibas parameter) (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.001
+-------------------------------------------------------------------------------
+teszt11 Repa osztaly - += operator (hozza kell adni)
+ Elofeltetel: 1 parameteres konstruktor meglete (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.001
+-------------------------------------------------------------------------------
+teszt12 Repa osztaly - += operator (ismetlodo nev)
+ Elofeltetel: nyuszi default konstruktor helyes mukodese (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.002
+-------------------------------------------------------------------------------
+teszt13 Repa osztaly - += operator (megtelik a tomb)
+ Elofeltetel: nyuszi default konstruktor helyes mukodese (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.001
+-------------------------------------------------------------------------------
+teszt14 Repa osztaly - += operator (lancba fuzes, konstans nyuszi)
+ Elofeltetel: nyuszi default konstruktor meglete (1 pont)
+-------------------------------------------------------------------------------
+Futas: 1/1 pont
+Futasido: 0.000
+-------------------------------------------------------------------------------
+teszt15 Repa osztaly - string konverzio
+ Elofeltetel: nyuszi default konstruktor meglete (3 pont)
+-------------------------------------------------------------------------------
+Forditas: 1/1 pont
+Futas: 2/2 pont
+Futasido: 0.000
+-------------------------------------------------------------------------------
+Osszpontszam: 21 / 21
