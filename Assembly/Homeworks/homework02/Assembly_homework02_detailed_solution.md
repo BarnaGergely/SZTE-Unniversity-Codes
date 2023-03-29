@@ -24,8 +24,8 @@ jmp kezdet
 Vannak feteteles ugro utasitasok is, amik csak akkor ugranak, ha egy feltetel teljesul. _(ez nem igaz, a háttérben nem igy mukodik, de igy a legerthetobb és a használata a mi feladatainkban ilyen)_
 
 ```assembly
-cmp edx, 42 // edx es a 42 osszehasonlitasa
-jz kezdet // ha az elozo cmp utasitasban megadott adatok egyenlok, a kezdet cimkere ugrik
+cmp edx, 42  // edx es a 42 osszehasonlitasa
+jz kezdet    // ha az elozo cmp utasitasban megadott adatok egyenlok, a kezdet cimkere ugrik
 ```
 
 Osszehasonlito utasitasok:
@@ -58,37 +58,37 @@ Osszehasonlito utasitasok:
 ### Megoldás
 
 ```assembly
-mov ecx, 0 // legyen ez az "i" valtozo, amiben taroljuk epp hanyadik elemnel jar a ciklus
-mov eax, 0 // ide fog kerulni hogy hany elemet raktunk a kimeneti tombbe
+mov ecx, 0      // legyen ez az "i" valtozo, amiben taroljuk epp hanyadik elemnel jar a ciklus
+mov eax, 0      // ide fog kerulni hogy hany elemet raktunk a kimeneti tombbe
 
-for: // for ciklus kezdetet jelzo cimke
+for:  // for ciklus kezdetet jelzo cimke
 
     // kilepesi feltetel, ha ez teljesul, lepjunk ki a for-bol
-    cmp ecx, edx    // ha ecx >= edx, az az ha az aktualis elem a tomb utolso utani eleme,
-    jge forend      // akkor ugorjunk a forend cimkere
+    cmp ecx, edx        // ha ecx >= edx, az az ha az aktualis elem a tomb utolso utani eleme,
+    jge forend          // akkor ugorjunk a forend cimkere
 
 
-    push ebx // elfogytak a regisztereink, de kéne még egy, ezért az épp nem haszáltat
-             // lementem a stack-re
-    mov ebx, [esi + 4*ecx] // ebx-be rakom, a bemeneti tomb aktualis elemet.
-                           // Azert van erre szukseg, mert mov és cmp mindket oldalan
-                           // nem lehet indirekt címzés ([eax])
+    push ebx        // elfogytak a regisztereink, de kéne még egy, ezért az épp nem haszáltat
+                    // lementem a stack-re
+    mov ebx, [esi + 4*ecx]      // ebx-be rakom, a bemeneti tomb aktualis elemet.
+                                // Azert van erre szukseg, mert mov és cmp mindket oldalan
+                                // nem lehet indirekt címzés ([eax])
 
     // if elagazas
     cmp ebx, 2
-    jl hamis // if(elem < 2) -> hamis | ha a a tomb eleme kisebb mint ketto, atugorjuk az igaz kodot
+    jl hamis        // if(elem < 2) -> hamis | ha a a tomb eleme kisebb mint ketto, atugorjuk az igaz kodot
 
         // igaz a feltetel
-        mov [edi + 4*eax], ebx // kiementi tomb kovetkezo ures helyere masolom a bemeneti tomb i-edik elemet
-        inc eax // masolt elem szamlalo + 1
+        mov [edi + 4*eax], ebx      // kiementi tomb kovetkezo ures helyere masolom a bemeneti tomb i-edik elemet
+        inc eax         // masolt elem szamlalo + 1
 
-    hamis: // ha hamis, nem csinalunk semmit
+    hamis:      // ha hamis, nem csinalunk semmit
 
-    pop ebx // regiszter régi értékének (tomb elemeinek szama) vissza töltése,
-            // mivel újra szükség lesz rá a for elején
-    inc ecx // i + 1
+    pop ebx         // regiszter régi értékének (tomb elemeinek szama) vissza töltése,
+                    // mivel újra szükség lesz rá a for elején
+    inc ecx         // i + 1
 
-jmp for // ha ide ert a program vissza ugrik a for elejere
+jmp for         // ha ide ert a program vissza ugrik a for elejere
 
-forend: // for ciklus vege
+forend:  // for ciklus vege
 ```
