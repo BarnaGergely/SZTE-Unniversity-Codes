@@ -7,7 +7,7 @@ mi csak a ugralni tudunk benne feljebb es lejebb cimkekre.
 
 ## Ugrás működése
 
-`jmp <memoriacim>` - a vezerles a <memoriacim>-re ugrik es onnan folytatodik
+`jmp <memoriacim>` - a vezerles a memoriacim-re ugrik es onnan folytatodik
 
 Ne feledd a cimkek sima memoriacimekkent viselkednek, igy lehet rajuk ugrani.
 
