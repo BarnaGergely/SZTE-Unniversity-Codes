@@ -28,6 +28,25 @@ cmp edx, 42  // edx es a 42 osszehasonlitasa
 jz kezdet    // ha az elozo cmp utasitasban megadott adatok egyenlok, a kezdet cimkere ugrik
 ```
 
+### for ciklus
+
+```assembly
+mov ecx, 0      // legyen ez az "i" valtozo, amiben taroljuk epp hanyadik elemnel jar a ciklus
+
+for:  // for ciklus kezdetet jelzo cimke
+
+    // kilepesi feltetel, ha ez teljesul, lepjunk ki a for-bol
+    cmp ecx, 5        // ha ecx >= 5, az az ha az aktualis elem a tomb 5. egyben utolsó eleme,
+    jge forend        // akkor ugorjunk a forend cimkere
+
+    // kod helye, amit a forban akarunk futtatni
+
+    inc ecx         // i + 1
+jmp for         // ha ide ert a program vissza ugrik a for elejere
+
+forend:  // for ciklus vege
+```
+
 #### Osszehasonlito utasitasok:
 
 | Relacio | Eloojeles | Elojeltelen |
