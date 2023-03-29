@@ -13,7 +13,7 @@ Ne feledd a cimkek sima memoriacimekkent viselkednek, igy lehet rajuk ugrani.
 
 ### Vegtelen ciklus:
 
-```assembly_x86
+```assembly
 kezdet:
 // program sorai
 jmp kezdet
@@ -23,7 +23,7 @@ jmp kezdet
 
 Vannak feteteles ugro utasitasok is, amik csak akkor ugranak, ha egy feltetel teljesul. _(ez nem igaz, a háttérben nem igy mukodik, de igy a legerthetobb és a használata a mi feladatainkban ilyen)_
 
-```assembly_x86
+```assembly
 cmp edx, 42 // edx es a 42 osszehasonlitasa
 jz kezdet // ha az elozo cmp utasitasban megadott adatok egyenlok, a kezdet cimkere ugrik
 ```
@@ -57,7 +57,7 @@ Osszehasonlito utasitasok:
 
 ### Megoldás
 
-```assembly_x86
+```assembly
 mov ecx, 0 // legyen ez az "i" valtozo, amiben taroljuk epp hanyadik elemnel jar a ciklus
 mov eax, 0 // ide fog kerulni hogy hany elemet raktunk a kimeneti tombbe
 
