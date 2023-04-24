@@ -1,6 +1,7 @@
 # Assembly Intel X86 Linux - 2.ZH Jegyzet 
 
 Ez egy jegyzetet az Intel x86 Linux Assembly témaköréből. Nem teljes és egyáltalán nem biztos hogy hibátlan, de aránylag rövid és érhető.
+
 - Szöveggel elmagyaráztam mindent
 - tele van példa programokkal
 - Házi feladatok megoldása elmagyarázva
