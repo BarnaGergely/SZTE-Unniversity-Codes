@@ -3,13 +3,10 @@
 .text
 
 /*
-cd /mnt/d/SZTE/assembly/HF3
-
-
 Elvárt függvény prototípus (C-ben):
 int filterElements(int input[] , int length, int output[]);
-
 */
+
 .global filterElements
 filterElements:
     push ebp
