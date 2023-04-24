@@ -1,22 +1,24 @@
-# Assembly 2. házifeldat részletes megoldás
+# Assembly Intel X86 Linux - 2.ZH Jegyzet 
 
-## TODO: Alap assembly program
+## Alap assembly program
 
-## TODO: Regiszterek
+[Tutoriál videjó](https://youtu.be/p6InUolGGvA?t=24)
 
-## TODO: Alap funkciók
+### Regiszterek
 
-mov
+[Tutoriál videjó](https://youtu.be/p6InUolGGvA?t=250)
 
-### TODO: Verem kezelése
+### adat mozhatás (mov)
+
+`mov eax, ebx` - eax értéke legyen ebx
+
+### Verem kezelése
 
 [Tutoriál videjó](https://youtu.be/V3ySVsubdzQ?t=190)
 
-pop
-
-push
-
-esp mindig a verem tetejére mutat
+- `push eax` - eax mnetése a stack-re
+- `pop eax` - a stack "tetején" lévő (legutóbb bele rakott) elem kivétele az `eax`-be
+- `esp` regiszter (stack pointer regiszter): mindig a verem "tetejére" mutat, a legutóbb berakott elemre
 
 ### Indirekt címzés
 
@@ -178,7 +180,7 @@ kezdet:
 jmp kezdet
 ```
 
-### feltételes ugrás
+### Feltételes ugrás
 
 Vannak feteteles ugro utasitasok is, amik csak akkor ugranak, ha egy feltetel teljesul. _(ez nem igaz, a háttérben nem igy mukodik, de igy a legerthetobb és a használata a mi feladatainkban ilyen)_
 
@@ -275,6 +277,8 @@ forend:  // for ciklus vege
 
 [Tutoriál videjó](https://www.youtube.com/watch?v=V3ySVsubdzQ&list=PLTD6Kt9p80KBVDCvFy6vAZ8tuhLH5AzAW&index=4)
 
+[**Nem érdekel az elmélet, csak a példa program**](https://github.com/BarnaGergely/SZTE-Unniversity-Codes/blob/main/Assembly/Assembly_ZH2_Vazlat.md#ez-pedig-egy-t%C3%B6k%C3%A9letes-f%C3%BCggv%C3%A9ny-h%C3%ADv%C3%A1s)
+
 Ha szeretnél egy C-ből hívható Assembly függvényt csinálni, egy globális címkét kell csinálnod olyan nevűt, ami a függvény neve lesz.
 
 pl. ezt a C függvényt valósítsuk meg Assembly-ben: `void eljaras(){ return; }`
@@ -308,7 +312,7 @@ ketto:
 
 A főprogram, ahonnan meghíták a függvényt is tárolna egy rakás dolgot a regiszterekben. Ha te a metódusodban neki állsz és felül írod a regiszterek tartalmát, jól szétcseszed a főprogramot. Erre találták ki "szídepöl" konvenciót, ami annyit mond: metsél le mindent stack-ra, amit használsz, aztán ha végeztél töltsed vissza.
 
-A legbiztosabb ha lementesz mindent az eax-en és az esp-n kívül:
+**A legbiztosabb ha lementesz mindent az eax-en és az esp-n kívül:**
 
 ```assembly
 .global nemRontElMindent
@@ -331,7 +335,7 @@ nemRontElMindent:
 
 ### Paraméterek és ret
 
-Ez bonyolult lesz. ;( A függvény paraméterei a stack (verem) en adódnak át. A stack utolsó elemére mutat az esp regiszter, így a [esp] címzéssel elérhetjük a legutóbb berakott elemet, az [esp + 1*4]-el a következőt, stb. A stack megfordítja a beadott értékek sorrendjét: amit utoljára bele raktunk azt fogjuk tudni elsőnek kivenni.
+Ez bonyolult lesz. ;( A függvény paraméterei a stack (verem) en adódnak át. A stack utolsó elemére mutat az esp regiszter, így a `[esp]` címzéssel elérhetjük a legutóbb berakott elemet, az `[esp + 1*4]`-el a következőt, stb. A stack megfordítja a beadott értékek sorrendjét: amit utoljára bele raktunk azt fogjuk tudni elsőnek kivenni.
 
 A függvény hívás tesz egy akkor nagy szivességet hogy fordított sorrendben dobálja be a verembe a paramétereket, így mi jó sorrendben tudjuk kivenni, viszont utána jön a köcsög függvény hívás és bele teszi a címet, amire majd a függvény végén a `ret` utasításnak vissza kell térni.
 
@@ -367,8 +371,6 @@ ebp használatával cdecl konvenzió mellett így néz ki a vermünk:
 
 Ha így hívod meg a függvényt, csinálhatsz bármit a regiszterekkel, rakhatsz bármit a stack-re, nem lesz gond és bármikor el fogod tudni érni a paramétereket.
 
-A prológust, epilógust és a paraméterek elérését érdemes utasításól utasításra megtanulni.
-
 c függvény:
 
 ```c
@@ -376,6 +378,8 @@ int tokeletesFuggveny(int szam1, int szam2){
   return szam1 + szam2;
 }
 ```
+
+**A prológust, epilógust és a paraméterek elérését érdemes utasításól utasításra megtanulni.**
 
 Assembly megvalósítás:
 
