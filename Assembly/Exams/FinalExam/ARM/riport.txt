@@ -1,0 +1,157 @@
+[  ] Starting tester.
+[  ] Phase: Compile
+  [  OK  ] File 'tester.c' compiled correctly: 'tester.c.o'
+[  ] Phase: Extract Symbols: 'tester.c.o'
+  [  OK  ] Extracted 34 symbols.
+[  ] Phase: Assemble
+  [  OK  ] File 'feladat.s' compiled correctly: 'feladat.s.o'
+  [  OK  ] Compilable Assembly: +1 point (max: 1 point)
+[  ] Phase: Extract Symbols: 'feladat.s.o'
+  [  OK  ] Extracted 8 symbols.
+[  ] Phase: Check Symbols
+  [  OK  ] Using target symbol: 'feladatCopyCount'
+  [  OK  ] Symbol 'main' not found and should not be present.
+  [  OK  ] Target symbol 'feladatCopyCount' is global.
+  [  OK  ] Target symbol 'feladatCopyCount' is in text section.
+  [  OK  ] Correct Symbols in Assembly: +1 point (max: 1 point)
+[  ] Phase: Link
+  [  OK  ] Linked 'tester.c.o, feladat.s.o' correctly: 'feladat.s.bin'
+  [  OK  ] Linked Tester and Assembly: +1 point (max: 1 point)
+[  ] Phase: Execution: Test query
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Tests found to execute: 10
+
+[  ] Test Return values
+[  ] Phase: Execution: Test 1: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 1 result: PASS
+[  ] Phase: Execution: Test 2: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 2 result: PASS
+[  ] Phase: Execution: Test 3: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 3 result: PASS
+[  ] Phase: Execution: Test 4: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 4 result: PASS
+[  ] Phase: Execution: Test 5: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 5 result: PASS
+[  ] Phase: Execution: Test 6: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 6 result: PASS
+[  ] Phase: Execution: Test 7: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 7 result: PASS
+[  ] Phase: Execution: Test 8: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 8 result: PASS
+[  ] Phase: Execution: Test 9: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 9 result: PASS
+[  ] Phase: Execution: Test 10: Return value check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 10 result: PASS
+
+[  ] Test Contents
+[  ] Phase: Execution: Test 1: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 1 result: PASS
+[  ] Phase: Execution: Test 2: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 2 result: PASS
+[  ] Phase: Execution: Test 3: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 3 result: PASS
+[  ] Phase: Execution: Test 4: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 4 result: PASS
+[  ] Phase: Execution: Test 5: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 5 result: PASS
+[  ] Phase: Execution: Test 6: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 6 result: PASS
+[  ] Phase: Execution: Test 7: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 7 result: PASS
+[  ] Phase: Execution: Test 8: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 8 result: PASS
+[  ] Phase: Execution: Test 9: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 9 result: PASS
+[  ] Phase: Execution: Test 10: Contents check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 10 result: PASS
+
+[  ] Test Overflow
+[  ] Phase: Execution: Test 1: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 1 result: PASS
+[  ] Phase: Execution: Test 2: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 2 result: PASS
+[  ] Phase: Execution: Test 3: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 3 result: PASS
+[  ] Phase: Execution: Test 4: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 4 result: PASS
+[  ] Phase: Execution: Test 5: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 5 result: PASS
+[  ] Phase: Execution: Test 6: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 6 result: PASS
+[  ] Phase: Execution: Test 7: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 7 result: PASS
+[  ] Phase: Execution: Test 8: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 8 result: PASS
+[  ] Phase: Execution: Test 9: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 9 result: PASS
+[  ] Phase: Execution: Test 10: Overflow check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 10 result: PASS
+
+[  ] Test calling convention (cdecl/arm)
+[  ] Phase: Execution: Test 1: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 1 result: PASS
+[  ] Phase: Execution: Test 2: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 2 result: PASS
+[  ] Phase: Execution: Test 3: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 3 result: PASS
+[  ] Phase: Execution: Test 4: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 4 result: PASS
+[  ] Phase: Execution: Test 5: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 5 result: PASS
+[  ] Phase: Execution: Test 6: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 6 result: PASS
+[  ] Phase: Execution: Test 7: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 7 result: PASS
+[  ] Phase: Execution: Test 8: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 8 result: PASS
+[  ] Phase: Execution: Test 9: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 9 result: PASS
+[  ] Phase: Execution: Test 10: Calling convention check
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Test 10 result: PASS
+
+[  ] Test execution summary
+  [ STAT ] Return value check: +3 point(s) (max: 3 points)
+  [ STAT ] Contents check: +6 point(s) (max: 6 points)
+  [ STAT ] Buffer overflow check: +1 point(s) (max: 1 points)
+  [ STAT ] Calling convention check: +2 point(s) (max: 2 points)
+[  ] Total points: 15
