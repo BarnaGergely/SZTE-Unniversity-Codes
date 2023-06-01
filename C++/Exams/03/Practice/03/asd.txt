@@ -1,0 +1,145 @@
+#include <iostream>
+#include <string>
+#include "exception"
+#include "vector"
+#include "map"
+#include "set"
+#include "algorithm"
+
+using namespace std;
+
+// Amelyik reszt szeretned tesztelni, azt kommentezd ki!
+#ifndef TEST_BIRO
+#define NEVHIBA_ES_DIAKOT_KERES
+#define KITOROL
+#define MIKULAST_GYART
+#define FELDOLGOZ
+#endif
+
+#ifdef NEVHIBA_ES_DIAKOT_KERES
+// 1. Feladat
+
+class NevHiba :public exception
+{
+public:
+    string hibauzenet;
+
+    const char * what() const noexcept override
+    {
+        return hibauzenet.c_str();
+    }
+
+
+    NevHiba(const string& hibauzenet)
+    {
+        this->hibauzenet = "Hibas nev: "+hibauzenet;
+    }
+};
+
+// 2. Feladat
+bool diakotKeres(map<string, unsigned> diakok, unsigned keresettKor)
+{
+   for(auto& item : diakok)
+   {
+       if(item.first.length() < 3) throw NevHiba(item.first);
+   }
+    auto valami = find_if(diakok.begin(), diakok.end(),[&keresettKor](pair<string,unsigned> szotar)
+    {
+        return szotar.first != "Bela" && szotar.second == keresettKor;
+    });
+
+    return valami != diakok.end();
+}
+
+
+#endif
+
+#ifdef KITOROL
+// 3. Feladat
+void kitorol(vector<int>& vektor)
+{
+    int min = 10000000;
+    for (int i = 0; i < vektor.size(); ++i)
+    {
+        if(vektor[i] < min)
+        {
+            min = vektor[i];
+        }
+    }
+
+    vektor.erase(
+            remove_if(vektor.begin(),vektor.end(),[&min](int szam)
+            {
+                return szam % min == 3;
+            }),vektor.end()
+            );
+}
+#endif
+
+#ifdef MIKULAST_GYART
+struct Mikulas {
+    unsigned szakallhossz;
+    Mikulas(unsigned szakallhossz = 0): szakallhossz(szakallhossz) {}
+    bool operator <(const Mikulas& masik)
+    {
+        return this->szakallhossz < masik.szakallhossz;
+    }
+};
+
+// 4. Feladat
+vector<Mikulas> mikulastGyart(unsigned db, unsigned szakallhossz)
+{
+
+    vector<Mikulas> output (db);
+
+    generate(output.begin(), output.end(), [&szakallhossz]()
+    {
+       Mikulas mikulas(szakallhossz);
+       szakallhossz *= 3;
+        return mikulas;
+    });
+
+    return output; // ezt a sort modosithatod
+}
+#endif
+
+#ifdef FELDOLGOZ
+// 5. Feladat
+vector<int> feldolgoz(int* tomb, unsigned tombHossza)
+{
+    int db = 0;
+    for (int i = 0; i < tombHossza; ++i)
+    {
+        if(tomb[i] == 2)
+        {
+            db++;
+        }
+    }
+
+    vector<int> vektor;
+    for (int i = 0; i < tombHossza; ++i)
+    {
+        vektor.push_back(tomb[i]);
+    }
+    cout <<"";
+
+    vektor.erase(
+            remove_if(vektor.begin(),vektor.end(),[&db](int szam)
+            {
+                return szam > db;
+            }),vektor.end()
+    );
+
+    std::sort(vektor.begin(), vektor.end(),[](int egyik, int masik)
+    {
+        return masik < egyik;
+    });
+
+    return vektor;
+}
+#endif
+int main()
+{
+
+    return 0;
+}

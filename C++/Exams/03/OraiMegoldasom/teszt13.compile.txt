@@ -1,0 +1,113 @@
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp: In function int main():
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:25:5: error: KedvencItal was not declared in this scope
+     KedvencItal h1 = {"Dezso", "Palacsinta"};
+     ^~~~~~~~~~~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:26:16: error: expected ; before h4
+     KedvencItal h4 = {"Peter", "Palacsinta"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:27:16: error: expected ; before h5
+     KedvencItal h5 = {"Endre", "Palacsinta"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:28:16: error: expected ; before h10
+     KedvencItal h10 = {"Andras", "Palacsinta"};
+                ^~~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:30:16: error: expected ; before h2
+     KedvencItal h2 = {"Eszter", "Kelkaposzta"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:32:16: error: expected ; before h3
+     KedvencItal h3 = {"Mark", "Pizza"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:33:16: error: expected ; before h6
+     KedvencItal h6 = {"Agi", "Pizza"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:35:16: error: expected ; before h7
+     KedvencItal h7 = {"Anna", "Rantott hus"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:36:16: error: expected ; before h8
+     KedvencItal h8 = {"Anita", "Rantott hus"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:37:16: error: expected ; before h11
+     KedvencItal h11 = {"Erzsi", "Rantott hus"};
+                ^~~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:39:16: error: expected ; before h9
+     KedvencItal h9 = {"Gyongyi", "Mickey egeres toast"};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:43:16: error: expected ; before t1
+     KedvencItal t1[] = {h9, h3, h1, h4, h6, h10};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:45:40: error: t1 was not declared in this scope
+     vector<string> r1 = kedvenc_italok(t1, d1);
+                                        ^~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:45:40: note: suggested alternative: r1
+     vector<string> r1 = kedvenc_italok(t1, d1);
+                                        ^~
+                                        r1
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:45:25: error: kedvenc_italok was not declared in this scope
+     vector<string> r1 = kedvenc_italok(t1, d1);
+                         ^~~~~~~~~~~~~~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:51:16: error: expected ; before t2
+     KedvencItal t2[] = {h2, h1, h11, h7, h8, h10};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:53:40: error: t2 was not declared in this scope
+     vector<string> r2 = kedvenc_italok(t2, d2);
+                                        ^~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:53:40: note: suggested alternative: r2
+     vector<string> r2 = kedvenc_italok(t2, d2);
+                                        ^~
+                                        r2
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:59:16: error: expected ; before t3
+     KedvencItal t3[] = {h9, h1, h5, h4, h6, h10, h3};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:61:40: error: t3 was not declared in this scope
+     vector<string> r3 = kedvenc_italok(t3, d3);
+                                        ^~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:61:40: note: suggested alternative: r3
+     vector<string> r3 = kedvenc_italok(t3, d3);
+                                        ^~
+                                        r3
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:67:16: error: expected ; before t4
+     KedvencItal t4[] = {h1, h2, h3, h4, h5, h6, h7, h8, h10, h11};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:69:40: error: t4 was not declared in this scope
+     vector<string> r4 = kedvenc_italok(t4, d4);
+                                        ^~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:69:40: note: suggested alternative: r4
+     vector<string> r4 = kedvenc_italok(t4, d4);
+                                        ^~
+                                        r4
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:75:16: error: expected ; before t5
+     KedvencItal t5[] = {h7, h2, h8, h11};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:77:40: error: t5 was not declared in this scope
+     vector<string> r5 = kedvenc_italok(t5, d5);
+                                        ^~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:77:40: note: suggested alternative: r5
+     vector<string> r5 = kedvenc_italok(t5, d5);
+                                        ^~
+                                        r5
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:83:16: error: expected ; before t6
+     KedvencItal t6[] = {h7, h8, h11};
+                ^~~
+                ;
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:85:40: error: t6 was not declared in this scope
+     vector<string> r6 = kedvenc_italok(t6, d6);
+                                        ^~
+/var/www/html/F/IB302g-6/4/1/teszt13.cpp:85:40: note: suggested alternative: r6
+     vector<string> r6 = kedvenc_italok(t6, d6);
+                                        ^~
+                                        r6
